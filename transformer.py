@@ -127,7 +127,9 @@ class FeedForward(nn.Module):
 
 
 class Encoder(nn.Module):
-    """"""
+    """
+    n_head=8, n_layer=6
+    """
 
     def __init__(self):
         super(Encoder, self).__init__()

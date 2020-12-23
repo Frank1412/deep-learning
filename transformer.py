@@ -65,6 +65,7 @@ class MyDataSet(data.Dataset):
 
 def padding_mask(inputQ, inputK):
     """
+    self_attention mask 填充0 消除对SoftMax的影响
     inputQ, inputK: [batch_size, seq_len]
     """
     batch_size = inputQ.shape[0]

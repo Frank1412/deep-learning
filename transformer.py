@@ -128,7 +128,7 @@ class FeedForward(nn.Module):
 
 class Encoder(nn.Module):
     """
-    n_head=8, n_layer=6
+    n_head=8, n_layer=6,
     """
 
     def __init__(self):
@@ -163,6 +163,14 @@ class Encoder(nn.Module):
             enc_outputs = ff_out  # [batch_size, seq_len, embedding_dim]
             print(attn_out.shape, enc_outputs.shape)
 
+        return
+
+
+class Decoder(nn.Module):
+    def __init__(self):
+        super(Decoder, self).__init__()
+
+    def forward(self):
         return
 
 
